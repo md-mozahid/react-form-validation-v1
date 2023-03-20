@@ -1,0 +1,218 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: sans-serif;
+}
+:root {
+  --primaryPurple: #646ff0;
+  --primaryRose: #be123c;
+  --black-1: #646681;
+  --black-2: #585858;
+  --bg1: #f8f8ff;
+  --bg2: #ecedf6;
+  --bg3: #cccdde;
+  --gray1: #eee;
+  --gray2: #dedfe1;
+  --black: black;
+  --white: white;
+  --red: red;
+  --rose-500: #f43f5e;
+  --rose-600: #e11d48;
+  --rose-700: #be123c;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d1fae5;
+  padding: 50px;
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: var(--bg2);
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  color: var(--white);
+  color: var(--black);
+}
+
+h1 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.inputText {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* position: relative; */
+  border: 1px solid var(--gray-500);
+}
+
+.inputText:focus {
+  border: 1px solid var(--gray-700);
+}
+
+.inputShowHide {
+  position: relative;
+}
+.showPassword {
+  color: var(--rose-600);
+  position: absolute;
+  transform: translateY(-50%);
+  top: 30px;
+  right: 2%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.copyText {
+  color: #1d4ed8;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 395px;
+  left: 60%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.checkBox {
+  display: flex;
+  margin-top: 16px;
+}
+.checkbox {
+  display: block;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  border: none;
+}
+.agree {
+  margin-left: 10px;
+}
+
+/* button */
+button,
+.btn {
+  display: inline-block;
+  background-color: var(--sky-700);
+  color: var(--white);
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--sky-600);
+}
+.btn-fw {
+  width: 100%;
+}
+
+.button--primary {
+  background-color: var(--blue-600);
+  color: var(--white);
+}
+
+.button--primary:hover {
+  background-color: var(--blue-700);
+}
+
+.button--secondary {
+  background-color: var(--gray-600);
+  color: var(--white);
+}
+
+.button--secondary:hover {
+  background-color: var(--gray-700);
+}
+
+.errMsg {
+  color: var(--rose-700);
+}
+
+.trackerBox .validated .conditionText {
+  color: #0284c7;
+}
+
+.trackerBox .notValidated {
+  color: var(--black);
+}
+
+.iconCircle {
+  /* color: #0284c7; */
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.conditionText {
+  font-size: 14px;
+}
+
+/* .checkBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+} */
+
+.footerText {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
